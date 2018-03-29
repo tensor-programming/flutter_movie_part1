@@ -49,7 +49,7 @@ class HomeState extends State<HomePage> {
       setState(() {
         hasLoaded = true;
       });
-      return;
+      return; //Forgot to add in the tutorial <- leaves function if there is no query in the box. 
     }
     setState(() => hasLoaded = false);
     http
